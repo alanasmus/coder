@@ -100,13 +100,16 @@ header .navbar {
     width: 100%;
     display: flex;
     align-items: center;
+    transition: .5s ease-out;
 }
 
 .navbar__link__list a:hover{
-    border: 1px solid var(--color-secondary);
+    border: 1px solid var(--color-primary);
+    background-color: rgb(0, 0, 0);
+    color: var(--color-primary);
     border-top-left-radius: 25px;
     padding: 0.5rem 1rem;
-    transition: border .2s ease-in;
+    transition: .5s ease-in;
 }
 
 .navbar__link__list li {
