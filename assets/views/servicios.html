@@ -5,67 +5,103 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="shortcut icon" href="../images/kurumaicon.jpg" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="../css/style.css">
         <title>Kuruma Details - Contacto</title>
     </head>
     <body>
         <header>
-            <nav class="navbar flex-row container">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
                 <a class="navbar__brand" href="../../index.html">
-                    <img src="../images/logo.jpg" alt="logo"></a>
-                <ul class="navbar__link__list flex-row">
-                    <li>
-                        <a href="./servicios.html">SERVICIOS</a>
-                    </li>
-                    <li>
-                        <a href="./galeria.html">GALERIA</a>
-                    </li>
-                    <li>
-                        <a href="./nosotros.html">NOSOTROS</a>
-                    </li>
-                    <li>
-                        <a href="./contacto.html">CONTACTO</a>
-                    </li>
-                </ul>
-            </nav>
+                    <img src="../images/logo.jpg" alt="logo"/></a>
+              <button class="navbar-toggler navbar__button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse navbar__link__list" id="navbarNavAltMarkup">
+                <div class="navbar__link__list__a">
+                  <a class="nav-link" aria-current="page" href="./servicios.html">SERVICIOS</a>
+                  <a class="nav-link" href="./galeria.html">GALERIA</a>
+                  <a class="nav-link" href="./nosotros.html">NOSOTROS</a>
+                  <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                </div>
+              </div>
+            </div>
+          </nav>
         </header>
     <main>
         <section class="servicios">
             <div class="servicios__container">
-                <h2 class="servicios_titulo">Nuestros servicios disponibles
+                <h1 class="servicios_titulo">Nuestros servicios disponibles
                 </h2>
-                <h3>Tratamiento Cerámico
-                </h3> 
-                <p>La función de los Tratamientos Cerámicos, también llamado Cristal Líquido es la de brindar protección, 
-                    brillo y profundidad a la pintura, que con el mantenimiento adecuado tienen 
-                    una protección por un periodo de 1 a 3 años y más, según su calidad.
-                </p>
-                <h3>Limpieza de Interior
-                </h3>
-                <p>El detallado interior es también un proceso sistemático y laborioso, que repasa el habitáculo
-                    desde el suelo hasta el techo. Limpiando y restaurando todos los tapizados y detalles
-                    que conforman el interior de nuestro auto.
-                </p>
-                <h3>Ploteo de carroceria
-                </h3>
-                <p>Se trata de un sistema de “envoltura” de cualquier vehículo con materiales adhesivos removibles, más comúnmente conocidos como vinilos,
-                    con el objetivo de modificar el color externo del mismo, o simplemente proteger la pintura original.
-                </p>
-                <h3>Restauración de ópticas
-                </h3>
-                <p>Su objetivo es el pulir imperfecciones, rayados u opacamiento, aplicando liquido ceramico y sellado,
-                    logrando un brillo y embellecimiento perfecto.
-                </p>
-                <h3>Limpieza de motor
-                </h3>
-                <p>Lavado cuidadoso y profundo del mismo, dejando atras restos de aceite, grasa, tierra y todo tipo de manchas, 
-                    tomando las precauciones necesarias en las zonas electricas para asegurar un resultado plenamente positivo.
-                </p>
-                <h3>Trabajos Autos Preventa
-                </h3>
-                <p>Corresponde a una limpieza de interior, motor y abrillantado (pulido básico para levantar el brillo) perfecta,
-                    para dejar tu vehiculo en su mejor versión, y tener un óptimo impacto previo a ponerlo en venta.
-                </p>
+                <div class="accordion accordion-flush servicios_accordion" id="accordionFlushExample">
+                    <div class="accordion-item servicios__background">
+                      <h2 class="accordion-header servicios__background" id="flush-headingOne">
+                        <button class="accordion-button collapsed servicios__background" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Tratamiento Cerámico
+                        </button>
+                      </h2>
+                      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">La función de los Tratamientos Cerámicos, también llamado Cristal Líquido es la de brindar protección, 
+                            brillo y profundidad a la pintura, que con el mantenimiento adecuado tienen 
+                            una protección por un periodo de 1 a 3 años y más, según su calidad.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item servicios__background">
+                      <h2 class="accordion-header servicios__background" id="flush-headingTwo">
+                        <button class="accordion-button collapsed servicios__background" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Limpieza de Interior
+                        </button>
+                      </h2>
+                      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">El detallado interior es también un proceso sistemático y laborioso, que repasa el habitáculo
+                            desde el suelo hasta el techo. Limpiando y restaurando todos los tapizados y detalles
+                            que conforman el interior de nuestro auto.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item servicios__background">
+                      <h2 class="accordion-header servicios__background" id="flush-headingThree">
+                        <button class="accordion-button collapsed servicios__background" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Ploteo de carroceria
+                        </button>
+                      </h2>
+                      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Se trata de un sistema de “envoltura” de cualquier vehículo con materiales adhesivos removibles, más comúnmente conocidos como vinilos,
+                            con el objetivo de modificar el color externo del mismo, o simplemente proteger la pintura original.</div>
+                      </div>
+                    </div>
+                    <div class="accordion-item servicios__background">
+                        <h2 class="accordion-header servicios__background" id="flush-headingThree">
+                          <button class="accordion-button collapsed servicios__background" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Restauración de ópticas
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Su objetivo es el pulir imperfecciones, rayados u opacamiento, aplicando liquido ceramico y sellado,
+                            logrando un brillo y embellecimiento perfecto.</div>
+                        </div>
+                      </div><div class="accordion-item servicios__background">
+                        <h2 class="accordion-header servicios__background" id="flush-headingThree">
+                          <button class="accordion-button collapsed servicios__background" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Limpieza de motor
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Lavado cuidadoso y profundo del mismo, dejando atras restos de aceite, grasa, tierra y todo tipo de manchas, 
+                            tomando las precauciones necesarias en las zonas electricas para asegurar un resultado plenamente positivo.</div>
+                        </div>
+                      </div><div class="accordion-item servicios__background">
+                        <h2 class="accordion-header servicios__background" id="flush-headingThree">
+                          <button class="accordion-button collapsed servicios__background" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Trabajos Autos Preventa
+                          </button>
+                        </h2>
+                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                          <div class="accordion-body">Corresponde a una limpieza de interior, motor y abrillantado (pulido básico para levantar el brillo) perfecta,
+                            para dejar tu vehiculo en su mejor versión, y tener un óptimo impacto previo a ponerlo en venta.</div>
+                        </div>
+                      </div>
+                  </div>
             </div>
         </section>
     </main>
@@ -84,5 +120,6 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
