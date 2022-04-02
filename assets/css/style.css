@@ -87,6 +87,8 @@ header .navbar {
     column-gap: 2.4rem;
     display: flex;
     height: 4.4rem;
+    justify-content: right;
+    width: auto;
 }
 
 .navbar__link__list__a {
@@ -99,12 +101,11 @@ header .navbar {
     border: 1px solid var(--color-primary);
     border-top-left-radius: 2.5rem;
     height: 80%;
-    width: 100%;
+    width: auto;
     display: flex;
     align-items: center;
     transition: .5s ease-out;
 }
-
 
 .navbar__link__list a {
     background-color: var(--color-primary);
@@ -262,8 +263,14 @@ header .navbar {
     font-size: 1em;
 }
 
+.accordion-button:not(.collapsed) {
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    border-bottom: 1.5px solid var(--color-tertiary);
+}
+
 .servicios h1 {
-    font-size: 3em;
+    font-size: 2em;
     text-align: left;
     font-weight: bold;
 }
@@ -296,6 +303,10 @@ header .navbar {
     margin-right: auto;
 }
 
+.carousel {
+    margin-left: 5%;
+    margin-right: 5%;
+}
 .galeria__cuarto {
     width: 24%;
 }
@@ -323,6 +334,10 @@ header .navbar {
     font-size: 2em;
 }
 
+.nosotros__container_proceso {
+    padding: 0 0;
+}
+
 /*Main Contacto */
 .contacto {
     min-height: 80vh;
@@ -339,6 +354,10 @@ header .navbar {
     margin-right: auto;
     font-family: "custom-font";
     font-weight: bold;
+    font-size: 2em;
+}
+
+.contacto__container h3 {
     font-size: 2em;
 }
 
