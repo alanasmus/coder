@@ -82,7 +82,6 @@ header .navbar {
     background-color: var(--color-secondary);
 }
 .navbar__link__list {
-    flex-basis: 40%;
     justify-content: center;
     column-gap: 2.4rem;
     display: flex;
@@ -391,7 +390,6 @@ header .navbar {
     }
     .navbar__link__list {
       font-size: 0.5em;
-      flex-direction: column;
       align-content: center;
     }
     .home__container {
