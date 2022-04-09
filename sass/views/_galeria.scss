@@ -4,13 +4,10 @@
     min-height: 80vh;
     background: $color-primary;
     width: 100%;
-    padding-top: 8rem;
-    padding-bottom: 10rem;
-    margin-left: auto;
-    margin-right: auto;
+    @include paddings(8rem, 10rem);
+    @include margins(auto, auto);
 
     .carousel {
-        margin-left: 5%;
-        margin-right: 5%;
+        @include margins(5%, 5%);
     }
 }

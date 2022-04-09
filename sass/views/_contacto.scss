@@ -7,10 +7,8 @@
 
     .contacto__container {
         width: 60%;
-        padding-top: 10rem;
-        padding-bottom: 10rem;
-        margin-left: auto;
-        margin-right: auto;
+        @include paddings(10rem, 10rem);
+        @include margins(auto, auto);
         font-family: "custom-font";
         font-weight: bold;
         /*font-size: 2em;*/
@@ -21,13 +19,11 @@
         }
         
         .label{
-            margin-top: 1rem;
-            margin-bottom: 1rem;
+            @include margins(1rem, 1rem);
         }
         
         input{
-            margin-top: 1rem;
-            margin-bottom: 1rem;
+            @include margins(1rem, 1rem);
             padding: 0.5rem;
             width: 100%;
             border: none;

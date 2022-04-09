@@ -6,10 +6,8 @@
 
     .nosotros__container {
         width: 60%;
-        padding-top: 10rem;
-        padding-bottom: 10rem;
-        margin-left: auto;
-        margin-right: auto;
+        @include paddings(10rem, 10rem);
+        @include margins(auto, auto);
         font-family: "custom-font";
         font-weight: bold;
         color: $color-secondary;

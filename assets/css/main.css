@@ -67,7 +67,6 @@ header {
     header .navbar .navbar__button {
       background-color: #bbbaba; }
     header .navbar .navbar__link__list {
-      justify-content: center;
       column-gap: 2.4rem;
       display: flex;
       height: 4.4rem;
@@ -168,8 +167,8 @@ footer {
     grid-template-columns: auto 1fr;
     grid-template-rows: 1fr 1fr;
     padding-top: 4vh;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
     gap: 2rem; }
     .home .home__container .home__picture {
       max-height: 60vh;
@@ -179,23 +178,27 @@ footer {
       grid-row: 1 / 3; }
       .home .home__container .home__picture .home__picture_principal {
         height: 60vh;
-        margin-left: auto;
         margin-right: auto;
+        margin-left: auto;
         align-self: center; }
     .home .home__container .home__title {
       width: 100%;
+      align-items: center;
+      justify-items: center;
+      font-weight: bold;
       color: #bbbaba;
       font-family: "custom-font";
-      font-weight: bold;
       /*font-size: 7em;*/
       text-align: center;
       grid-column: 2;
       grid-row: 1 / 2; }
     .home .home__container .home__text {
       width: 100%;
+      align-items: center;
+      justify-items: center;
+      font-weight: bold;
       color: #bbbaba;
       font-family: "custom-font";
-      font-weight: bold;
       /*font-size: 3em;*/
       text-align: center;
       grid-column: 2;
@@ -221,14 +224,15 @@ footer {
   width: 100%;
   min-height: 80vh;
   background-color: blueviolet;
-  color: #bbbaba;
   align-items: center;
   justify-items: center;
+  font-weight: bolder;
+  color: #bbbaba;
   font-family: "custom-font"; }
   .servicios .servicios__container {
     width: 80%;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
     padding-top: 10rem;
     padding-bottom: 5rem;
     min-height: 80vh;
@@ -259,13 +263,13 @@ footer {
   min-height: 80vh;
   background: blueviolet;
   width: 100%;
-  padding-top: 10rem;
+  padding-top: 8rem;
   padding-bottom: 10rem;
-  margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-left: auto; }
   .galeria .carousel {
-    margin-left: 5%;
-    margin-right: 5%; }
+    margin-right: 5%;
+    margin-left: 5%; }
 
 /*Main Nosotros */
 .nosotros {
@@ -276,8 +280,8 @@ footer {
     width: 60%;
     padding-top: 10rem;
     padding-bottom: 10rem;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
     font-family: "custom-font";
     font-weight: bold;
     color: #bbbaba;
@@ -295,8 +299,8 @@ footer {
     width: 60%;
     padding-top: 10rem;
     padding-bottom: 10rem;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
     font-family: "custom-font";
     font-weight: bold;
     /*font-size: 2em;*/ }
@@ -304,11 +308,11 @@ footer {
       /*font-size: 2em;*/
       font-weight: bold; }
     .contacto .contacto__container .label {
-      margin-top: 1rem;
-      margin-bottom: 1rem; }
+      margin-right: 1rem;
+      margin-left: 1rem; }
     .contacto .contacto__container input {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
+      margin-right: 1rem;
+      margin-left: 1rem;
       padding: 0.5rem;
       width: 100%;
       border: none; }

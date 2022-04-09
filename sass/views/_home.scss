@@ -13,8 +13,7 @@
         grid-template-columns: auto 1fr;
         grid-template-rows: 1fr 1fr;
         padding-top: 4vh;
-        margin-left: auto;
-        margin-right: auto;
+        @include margins(auto, auto);
         gap: 2rem;
 
         .home__picture {
@@ -26,17 +25,15 @@
 
             .home__picture_principal {
                 height: 60vh;
-                margin-left: auto;
-                margin-right: auto;
+                @include margins(auto, auto);
                 align-self: center;
             }
         }
 
         .home__title{
             width: 100%;
-            color: $color-secondary;
+            @include texting(center, center, bold, $color-secondary);
             font-family: "custom-font";
-            font-weight: bold;
             /*font-size: 7em;*/
             text-align: center;
             grid-column: 2;
@@ -45,9 +42,8 @@
 
         .home__text{
             width: 100%;
-            color: $color-secondary;
+            @include texting(center, center, bold, $color-secondary);
             font-family: "custom-font";
-            font-weight: bold;
             /*font-size: 3em;*/
             text-align: center;
             grid-column: 2;
