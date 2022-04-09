@@ -1,0 +1,33 @@
+/* Helpers*/
+
+.flex-row{
+    display: flex;
+    align-items: center;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+@mixin paddings($top: 5rem, $bottom: 5rem){
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+@mixin margins($right: auto, $left: auto){
+    margin-right: $right;
+    margin-left: $left;
+}
+
+@mixin texting($aling: center, $justify: center, $fontweight: bolder, $color: grey){
+    align-items: $aling;
+    justify-items: $justify;
+    font-weight: $fontweight;
+    color: $color;
+}

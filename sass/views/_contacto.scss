@@ -1,0 +1,42 @@
+/*Main Contacto */
+.contacto {
+    min-height: 80vh;
+    background: $color-primary;
+    width: 100%;
+    color: $color-secondary;
+
+    .contacto__container {
+        width: 60%;
+        @include paddings(10rem, 10rem);
+        @include margins(auto, auto);
+        font-family: "custom-font";
+        font-weight: bold;
+        /*font-size: 2em;*/
+
+        h3 {
+            /*font-size: 2em;*/
+            font-weight: bold;
+        }
+        
+        .label{
+            @include margins(1rem, 1rem);
+        }
+        
+        input{
+            @include margins(1rem, 1rem);
+            padding: 0.5rem;
+            width: 100%;
+            border: none;
+        }
+        
+        button {
+            padding: 1.5rem;
+            border: none;
+            color: $color-primary;
+            font-family: "custom-font";
+            font-weight: bold;
+            border-radius: none;
+            background: $color-secondary;
+        }
+    }
+}

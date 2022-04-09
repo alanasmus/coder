@@ -1,0 +1,13 @@
+/*Main Galeria */
+
+.galeria {
+    min-height: 80vh;
+    background: $color-primary;
+    width: 100%;
+    @include paddings(8rem, 10rem);
+    @include margins(auto, auto);
+
+    .carousel {
+        @include margins(5%, 5%);
+    }
+}
