@@ -1,0 +1,15 @@
+/* Imports */
+@font-face {
+    font-family: "custom-font";
+    src: url("../fonts/WorkSans-Italic-VariableFont_wght.ttf");
+  }
+@import "./misc/normaliza";
+@import "./misc/mixins";
+@import "./misc/variables";
+@import "./partials/header";
+@import "./partials/footer";
+@import "./views/_home";
+@import "./views/servicios";
+@import "./views/galeria";
+@import "./views/nosotros";
+@import "./views/contacto";

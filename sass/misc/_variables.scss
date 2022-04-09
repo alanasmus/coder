@@ -1,0 +1,20 @@
+$color-primary: blueviolet;
+$color-secondary: rgb(187, 186, 186);
+$color-tertiary: black;
+$font-primary: "custom-font";
+$text-lg: 2em;
+$text-md: 1.5em;
+
+$fontsizings: (
+    xlarge: 7em,
+    large: 5em,
+    medium: 3em,
+    small: 2em,
+    xsmall: 1em
+);
+
+@each $var, $val in $fontsizings {
+    .fs-#{$var} {
+        font-size: #{$val};
+    }
+}

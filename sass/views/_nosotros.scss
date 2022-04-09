@@ -1,0 +1,22 @@
+/*Main Nosotros */
+.nosotros {
+    min-height: 80vh;
+    background: $color-primary;
+    width: 100%;
+
+    .nosotros__container {
+        width: 60%;
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: "custom-font";
+        font-weight: bold;
+        color: $color-secondary;
+        /*font-size: 2em;*/
+
+        .nosotros__container_proceso {
+            padding: 0 0;
+        }
+    }
+}

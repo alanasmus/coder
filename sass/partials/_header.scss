@@ -1,0 +1,98 @@
+header{
+    background-color: $color-tertiary;
+
+    .navbar {
+        min-height: 10vh;
+        justify-content: space-between;
+        padding: 0 2rem;
+        background-color: $color-tertiary;
+        width: 100%;
+
+        .navbar__brand {
+            flex-basis: 8%;
+            min-width: 10rem;
+
+            img{
+                width: 100%; 
+            }
+        }
+
+        .navbar__button {
+            background-color: $color-secondary;
+        }
+
+        .navbar__link__list {
+            justify-content: center;
+            column-gap: 2.4rem;
+            display: flex;
+            height: 4.4rem;
+            justify-content: right;
+            width: auto;
+
+            .navbar__link__list__a {
+                background-color: $color-primary;
+                padding: 0.5rem 1rem;
+                color: $color-secondary;
+                text-decoration: none;
+                font-weight: bold;
+                font-family: $font-primary;
+                border: 1px solid $color-primary;
+                border-top-left-radius: 2.5rem;
+                height: 80%;
+                width: auto;
+                display: flex;
+                align-items: center;
+                transition: .5s ease-out;
+            }
+
+            a:hover{
+                border: 1px solid $color-primary;
+                background-color: $color-secondary;
+                color: $color-primary;
+                border-top-left-radius: 25px;
+                padding: 0.5rem 1rem;
+                transition: .5s ease-in;
+            }
+
+            .navbar__link__list__a__link {
+                background-color: $color-primary;
+                padding: 0.5rem 1rem;
+                color: $color-secondary;
+                text-decoration: none;
+                font-size: $text-lg;
+                font-weight: bold;
+                font-family: $font-primary;
+                border: 1px solid $color-primary;
+                border-top-left-radius: 2.5rem;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                transition: .5s ease-out;
+
+                &--active {
+                    @extend .navbar__link__list__a__link;
+                    color: $color-tertiary;
+                }
+
+                li {
+                    display: inline-block;
+                    min-width: 12rem;
+                    width: auto;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 730px) {
+    header {
+        padding: 2rem;
+
+        .navbar__link__list {
+            font-size: 0.5em;
+            align-content: center;
+        }
+    }
+}
