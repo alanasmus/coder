@@ -23,7 +23,8 @@
         }
         
         input{
-            @include margins(1rem, 1rem);
+            @include margins(1rem, 0);
+            margin-bottom: 2rem;
             padding: 0.5rem;
             width: 100%;
             border: none;
@@ -31,11 +32,11 @@
         
         button {
             padding: 1.5rem;
+            border-radius: 15px;
             border: none;
             color: $color-primary;
             font-family: "custom-font";
             font-weight: bold;
-            border-radius: none;
             background: $color-secondary;
         }
     }
