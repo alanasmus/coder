@@ -68,7 +68,6 @@ header {
       background-color: #bbbaba; }
     header .navbar .navbar__link__list {
       column-gap: 2.4rem;
-      display: flex;
       height: 4.4rem;
       justify-content: right;
       width: auto; }
@@ -116,7 +115,7 @@ header {
           width: auto;
           height: 100%; }
 
-@media only screen and (max-width: 730px) {
+@media only screen and (max-width: 640px) {
   header {
     padding: 2rem; }
     header .navbar__link__list {
