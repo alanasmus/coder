@@ -20,6 +20,14 @@ footer {
         flex-basis: 40%;
         column-gap: 2.4rem;
         height: 4.4rem;
+
+        p {
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            background: $color-primary;
+            border-radius: 5px;
+        }
     }
 
     .footer__item {
